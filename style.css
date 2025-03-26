@@ -2,27 +2,48 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #1E1E1E;
 }
 a{
     text-decoration: none;
 }
 
 header{
-    background-color: #333;
-    color: white;
-    text-align: center;
+    color: #4169E1;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 header img{
+    padding-left: 15px;
     width: 75px;
     height: 50px;
     object-fit: cover;
     margin-left: 10px;
     margin: 10px;
 }
-#Logo{
+header menu{
+    margin-right: 20px;
+}
+header nav{
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-right: 20px;
+}
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+header nav ul li{
+    padding: 10px;
+    border: #4169E1 1px solid;
+    border-radius: 5px;
+    text-align: center;
+}
+.ItensMenu:hover, a:hover{
+    background-color: white;
+    color: black;
 }
