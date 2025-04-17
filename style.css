@@ -73,17 +73,6 @@ header{
     margin-right: 0px;
     height: auto;
 }
-/* Sobre mim */
-#Sobre{
-    background-color: black ;
-    color: white;
-    text-align: center;
-    scroll-margin-top: 120px;
-}
-#QuemSomos{
-    padding-top: 10px;
-    font-size: 2rem;
-}
 /* Seção de Eventos */
 #h1eventos{
     text-align: center;
@@ -136,6 +125,10 @@ footer h1{
 }
 #RedesSociais img{
     width: 50px;
+    transition: transform 0.3s ease-in-out; 
+}
+#RedesSociais img:hover{
+    transform: scale(1.2);
 }
 
 
