@@ -85,39 +85,41 @@ header{
     font-size: 2rem;
 }
 /* Seção de Eventos */
-#h1eventos{
+#h1eventos {
     text-align: center;
     margin: 20px;
     font-size: 35px;
 }
-#EventosContainer{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+#EventosContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
     gap: 40px;
-    margin-bottom: 100px;
-    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1200px;
 }
-.EventosItens{
+
+.EventosItens {
     background-color: black;
     color: white;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+}
 
-    transition: transform 0.3s ease;
+.EventosItens img {
+    width: 100%;
+    max-width: 300px; /* Mantém o tamanho máximo da imagem */
+    padding: 20px;
 }
-.EventosItens img{
-    width: 300px;
-    padding: 30px;
-}
-.EventosItens:hover{
+
+.EventosItens:hover {
     transition: transform 0.8s ease;
-    transform: scale(1.2);
+    transform: scale(1.07);
 }
-/* Seção de contatos */
 
+/* Seção de contatos */
 footer{
     background-color: black;
     color: white;
@@ -134,8 +136,19 @@ footer h1{
     gap: 10px;
     padding: 10px;
 }
+#RedesSociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
 #RedesSociais img{
     width: 50px;
+    transition: transform 0.3s ease-in-out; 
+}
+#RedesSociais img:hover{
+    transform: scale(1.2);
 }
 
 
